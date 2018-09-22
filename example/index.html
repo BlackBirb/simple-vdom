@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple vdom example</title>
+    <style>
+        #app > div {
+            display: flex;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+    <!-- main --->
+        Main version
+        <div id="main"></div>
+        <script src="../src/vDOM.js"></script> 
+        <script src="./main.js"></script>
+    <!-- basic --->
+        Basic version
+        <div id="basic"></div>
+        <script src="../src/basic/vDOMbasic.js"></script>
+        <script src="./basic.js"></script>
+    <!-- stateless --->
+        Stateless version
+        <div id="stateless"></div>
+        <script src="../src/stateless/vDOMstateless.js"></script>
+        <script src="./stateless.js"></script>
+    </div>
+</body>
+</html>
